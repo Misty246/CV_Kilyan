@@ -28,8 +28,8 @@ body {
   color: var(--text-light);
   line-height: 1.5;
 
-  min-height: auto;
-  display: block;
+  min-height: 100vh; /* pour que le body prenne toute la hauteur */
+  display: flex;
   flex-direction: column;
 }
 
@@ -352,10 +352,6 @@ section h2 {
   margin: 0 0.2rem;
 }
 
-.lang-switch button:first-child {
-  margin-left: 3.3rem;
-}
-
 .lang-switch img {
   width: 100%;
   height: 100%;
@@ -402,9 +398,9 @@ section h2 {
 }
 
 .full-width-image {
-  width: 100vw;          /* 🔥 toute la largeur de l’écran */
+  width: 100%;
+  margin-left: 0;        
   margin-top: 2rem;
-  margin-left: calc(50% - 50vw); /* évite les marges du body */
   overflow: hidden;
 }
 
@@ -425,7 +421,6 @@ html, body {
 footer {
   background-color: var(--bg-secondary); /* bleu foncé */
   color: var(--text-light);
-  text-align: left;
   align-items: center;
   font-size: 0.8rem;
   display: flex;
@@ -435,7 +430,6 @@ footer {
   /* Pour que le footer prenne toute la largeur */
   width: 100%;
 
-  position: relative;
   bottom: 0;
   left: 0;
 }
@@ -443,7 +437,7 @@ footer {
 .main-content {
   flex: 1; /* prend tout l'espace restant sous le header */
   background-color: var(--text-light);
-  padding-bottom: 80px; /* espace pour le footer */
+  padding-bottom: 30px; /* espace pour le footer */
 }
 
 .bubble-container {
