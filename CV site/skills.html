@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Accueil</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="lang.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-text">
+      <h1>Kilyan George</h1>
+      <h3><span class="i18n-text" data-i18n="header_feature">Curieux et Polyvalent</span></h3>
+    </div>
+    <button class="menu-btn" id="menuBtn">☰</button>
+  </header>
+
+  <div class="main-content">
+    
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Kilyan George. Tous droits réservés.</p>
+    <div class="lang-switch">
+      <button data-lang="fr" aria-label="Français"><img src="flags/fr.png" alt="Français"></button>
+      <button data-lang="en" aria-label="English"><img src="flags/en.jpg" alt="English"></button>
+    </div>
+  </footer>
+</body>
+
+<nav id="navMenu">
+  <div class="nav-header">
+    <h1>Kilyan George</h1>
+    <h2><span class="i18n-text" data-i18n="header_feature">Curieux et Polyvalent</span></h2>
+  </div>
+
+  <div class="nav-link">
+    <a href="index.html"><i class="fa-solid fa-house"></i><span class="i18n-text" data-i18n="nav_home">Accueil</span></a>
+  </div>
+  <div class="nav-link">
+    <a href="experiences.html"><i class="fa-solid fa-briefcase"></i><span class="i18n-text" data-i18n="nav_experiences">Expériences</span></a>
+  </div>
+  <div class="nav-link">
+    <a href="projects.html"><i class="fa-solid fa-folder-open"></i><span class="i18n-text" data-i18n="nav_projects">Projets</span></a>
+  </div>
+  <div class="nav-link">
+    <a href="skills.html"><i class="fa-solid fa-lightbulb"></i><span class="i18n-text" data-i18n="nav_skills">Aptitudes</span></a>
+  </div>
+  <div class="nav-link">
+    <a href="certificate.html"><i class="fas fa-award"></i><span class="i18n-text" data-i18n="nav_certificate">Certificat</span></a>
+  </div>
+  <div class="nav-link">
+    <a href="contact.html"><i class="fa-solid fa-envelope"></i><span class="i18n-text" data-i18n="nav_contact">Contact</span></a>
+  </div>
+
+  <div class="nav-socials">
+    <a href="https://www.linkedin.com/in/kilyan-george-7b7bb2282/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="mailto:kilyan26082004@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    <a href="https://github.com/tonpseudo" target="_blank"><i class="fa-brands fa-github"></i></a>
+  </div>
+</nav>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const navMenu = document.getElementById('navMenu');
+
+  // Ouvrir / fermer menu
+  menuBtn?.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+
+  // Fermer menu si clic en dehors
+  document.addEventListener('click', (e) => {
+    if (!navMenu.contains(e.target) && !menuBtn.contains(e.target)) {
+      navMenu.classList.remove('active');
+    }
+  });
+
+  // Effet de transition sur tous les boutons
+  const buttons = document.querySelectorAll('.btn-primary, .btn-secondary, .nav-link a');
+  buttons.forEach(button => {
+    button.addEventListener('click', (e) => {
+      const href = button.getAttribute('data-href') || button.getAttribute('href');
+      const isExternal = button.getAttribute('target') === '_blank';
+      if (href && !isExternal) {
+        button.classList.add('zoom-out');
+        setTimeout(() => {
+          navMenu?.classList.remove('active');
+          window.location.href = href;
+        }, 450);
+        e.preventDefault();
+      }
+    });
+  });
+</script>
+</html>
