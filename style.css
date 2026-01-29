@@ -200,7 +200,9 @@ nav.active {
 
 .hero p {
   font-size: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero .buttons button {
