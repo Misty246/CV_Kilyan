@@ -495,10 +495,19 @@ footer {
 }
 
 /* Texte sous l'image */
-.bubble-card p {
-  font-size: 0.95rem;
+.bubble-card h1 {
+  font-size: 1rem;
   color: var(--text-light);
   line-height: 1.4;
+  font-weight: bold;
+}
+
+/* Texte sous l'image */
+.bubble-card p {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  line-height: 1.4;
+  color: var(--primary);
 }
 
 section.sub-block {
