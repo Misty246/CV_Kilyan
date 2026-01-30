@@ -18,6 +18,12 @@ const translations = {
     contact_intro:
       "N’hésitez pas à me contacter pour toute question, opportunité ou collaboration.",
     contact_location: "Amiens, France",
+    Diplome_BAC: "Baccalauréat (mention bien).",
+    btn_download_BAC: "Afficher le Diplôme",
+    btn_download_toeic: "Afficher le Certificat",
+    certificate_TOEIC: "Certification TOEIC validé (B2+).",
+    certificate_permis: "Permis voiture Français et véhiculé.",
+    certificate_secourisme: "Formation aux premiers secours (PSC1).",
 
     // ✅ NAVIGATION
     nav_home: "Accueil",
@@ -39,13 +45,19 @@ const translations = {
     mindset:
       "I am always looking for new ways to make things simpler and more efficient.",
     about_title: "About me",
-    certificat_tittle: "My Certificates & License",
+    certificat_tittle: "My Certificates & Licenses",
     about_text:
       "Motivated student, I like to analyze, understand, and improve existing processes. Curious by nature, I adapt quickly to new environments and quickly learn new skills. My goal is to always progress, take on challenges, and find innovative solutions.",
     contact_title: "Contact me",
     contact_intro:
       "Feel free to contact me for any questions, opportunities, or collaborations.",
     contact_location: "Amiens, France",
+    Diplome_BAC: "Baccalauréat, with honors (Good).",
+    btn_download_BAC: "View Diploma",
+    btn_download_toeic: "View Certificate",
+    certificate_TOEIC: "TOEIC Certification achieved (B2+).",
+    certificate_permis: "French driving license with own vehicle.",
+    certificate_secourisme: "First Aid Training (PSC1).",
 
     // ✅ NAVIGATION
     nav_home: "Home",
