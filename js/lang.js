@@ -24,6 +24,17 @@ const translations = {
     certificate_TOEIC: "Certification TOEIC validé (B2+).",
     certificate_permis: "Permis voiture Français et véhiculé.",
     certificate_secourisme: "Formation aux premiers secours (PSC1).",
+    skills_tittle: "Mes Compétences & Aptitudes", 
+    skills_office: "Maîtrise des Outils office",
+    skills_office_desc: "Excel, VBA, Word, PowerPoint, PowerBI",
+    skills_google: "Maîtrise des Outils Google",
+    skills_google_desc: "Sheet, Docs, Slides, Looker Studio, Forms",
+    skills_3D: "Modélisation 3D",
+    skills_3D_desc: "Onshape, Fusion 360, SolidWorks",
+    skills_programming: "Compétences en programmation",
+    skills_programming_desc: "Python, C, HTML, CSS, JavaScript, VBA, AppScript.",
+    skills_human: "Optimisation et conduite de projets",
+    skills_SAP: "Utilisation, Paramétrage & Extractions de SAP",
 
     // ✅ NAVIGATION
     nav_home: "Accueil",
@@ -58,7 +69,18 @@ const translations = {
     certificate_TOEIC: "TOEIC Certification achieved (B2+).",
     certificate_permis: "French driving license with own vehicle.",
     certificate_secourisme: "First Aid Training (PSC1).",
-
+    skills_tittle: "My Skills & Abilities",
+    skills_office: "Proficient in Office Tools",
+    skills_office_desc: "Excel, VBA, Word, PowerPoint, PowerBI",
+    skills_google: "Proficient in Google Tools",
+    skills_google_desc: "Sheet, Docs, Slides, Looker Studio, Forms",
+    skills_3D: "3D Modeling",
+    skills_3D_desc: "Onshape, Fusion 360, SolidWorks",
+    skills_programming: "Programming Skills",
+    skills_programming_desc: "Python, C, HTML, CSS, JavaScript, VBA, AppScript.",
+    skills_human: "Optimize & Drive project",
+    skills_SAP: "Use, Parameter settings & Extractions from SAP", 
+    
     // ✅ NAVIGATION
     nav_home: "Home",
     nav_experiences: "Experiences",
