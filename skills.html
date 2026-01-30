@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CV - Accueil</title>
+  <title>CV - Aptitudes</title>
   <link rel="stylesheet" href="style/style.css">
   <script src="js/lang.js" defer></script>
   <script src="js/main.js" defer></script>
@@ -13,14 +13,65 @@
 <body>
   <header>
     <div class="header-text">
-      <h1>Kilyan George</h1>
-      <h3><span class="i18n-text" data-i18n="header_feature">Curieux et Polyvalent</span></h3>
+      <a href="index.html" class="btn-link">
+        <h1>Kilyan George</h1>
+        <h3><span class="i18n-text" data-i18n="header_feature">Curieux et Polyvalent</span></h3>
+      </a>
     </div>
     <button class="menu-btn" id="menuBtn">☰</button>
   </header>
 
+  <section class="sub-block">
+    <h2>
+      <span class="i18n-text" data-i18n="skills_tittle"
+        >Mes Compétences & Aptitudes</span
+      >
+    </h2>
+  </section>
+
   <div class="main-content">
-    
+    <div class="bubble-container">
+      <div class="bubble-card">
+        <img src="assets/logo-office.png" alt="skills_office" />
+          <span class="i18n-text" data-i18n="skills_office">
+            <h1>Maîtrise des Outils office</h1>
+            <p>Excel, VBA, Word, PowerPoint, PowerBI</p>
+          </span>
+      </div>
+      <div class="bubble-card">
+        <img src="assets/logo-google.png" alt="skills_google" />
+          <span class="i18n-text" data-i18n="skills_google">
+            <h1>Maîtrise des Outils Google</h1>
+            <p>Sheet, Docs, Slides, Looker Studio, Forms</p>
+          </span>
+      </div>
+      <div class="bubble-card">
+        <img src="assets/logo-fusion.png" alt="skills_3D" />
+          <span class="i18n-text" data-i18n="skills_3D">
+            <h1>Modélisation 3D</h1>
+            <p>Onshape, Fusion 360, SolidWorks</p>
+          </span>
+      </div>
+      <div class="bubble-card">
+        <img src="assets/python.webp" alt="Compétences en Programmation" />
+          <span class="i18n-text" data-i18n="skills_programming">
+            <h1>Compétences en programmation</h1>
+            <p>Python, C, HTML, CSS, JavaScript, VBA, AppScript.</p>
+          </span>
+      </div>
+      <div class="bubble-card">
+        <img src="assets/logo-sap.jpg" alt="SAP" />
+          <span class="i18n-text" data-i18n="skills_SAP">
+            <h1>Utilisation, Paramétrage & Extractions de SAP</h1>
+          </span>
+      </div>
+      <div class="bubble-card">
+        <img src="assets/logo-rouage.jpg" alt="skills_human" />
+          <span class="i18n-text" data-i18n="skills_3D">
+            <h1>Optimisation et conduite de projets</h1>
+          </span>
+      </div>
+    </div>
   </div>
 
   <div class="lang-switch">
